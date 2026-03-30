@@ -180,7 +180,7 @@
 # else:
 #     numero_latas_int = int(numero_latas)
 #     qtd_real_latas = numero_latas_int +1
-#     print(f"Você vai precisar de {qtd_real_latas}, isso irá te custar {qtd_real_latas * 80}")
+#     print(f"Você vai precisar de {qtd_real_latas} latas, isso irá te custar R$ {qtd_real_latas * 80},00")
 
 # #----------------------------------#
 
