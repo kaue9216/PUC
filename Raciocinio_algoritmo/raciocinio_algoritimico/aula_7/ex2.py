@@ -1,8 +1,6 @@
 produtos = {"Maça" : 10, "Banana" : 20, "Amora" : 30}
 
 print(produtos)
-produto = 0
-preco = 0
 
 produto = input("Qual dos produtos você deseja alterar? ")
 preco = input("Qual o novo valor você deseja? ")
