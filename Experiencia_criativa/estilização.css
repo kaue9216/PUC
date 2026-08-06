@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #152e3e;
+    color: #ffffff;
+    font-family: "Poppins";
+
+}
+
+.secao1 {
+    padding: 150px;
+    h1 {
+        text-align: center;
+    }
+    p {
+        font-size: 1vw;
+    }
+
+}
+
+
+header{
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    ul{
+        display: flex;
+        gap: 24px;
+        list-style-type: none;
+        background-color: #ffffff79;
+        padding: 16px 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(40px);
+    }
+}
+
+.rockstar {
+    padding: 30px;
+    display: inline-block;
+    background-color: #dba958;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+
+    img {
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.naughtydog {
+    padding: 30px;
+    display: inline-block;
+    background-color: #dba958;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.EA {
+    padding: 30px;
+    display: inline-block;
+    background-color: #dba958;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.ttgames {
+    padding: 30px;
+    display: inline-block;
+    background-color: #dba958;
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    img {
+    border-radius: 12px;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}

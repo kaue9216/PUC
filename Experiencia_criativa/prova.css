@@ -1,0 +1,168 @@
+body{
+  background-color: #152e3e;
+}
+.navbar{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10%;
+  list-style-type: none;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #152e3e;
+}
+
+h1, p, li, h3, td{
+  color: white;
+}
+
+.novodiv{
+  position: relative;
+  z-index: 9999999;
+}
+
+.novo{
+  margin-top: -100px;
+  margin-right: -200px;
+  margin-bottom: 100px;
+  color: red;
+}
+
+
+.links{
+  text-decoration: none;
+}
+
+.linha{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.corpo{
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+}
+
+.card-jogo{
+  /* margin-bottom: 5%; */
+  border: 2px solid black;
+  margin: 5%;
+  text-align: center;
+  height: 100%;
+  border-radius: 5%;
+  width: 100%;
+  background-color: #dba958;
+}
+
+.botao{
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.painel-usuario{
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin-right: 5%;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+h1{
+  padding-top: 10%;
+  text-align: center;
+}
+
+img{
+  height: auto;
+  width: 250px;
+  margin-top: 10%;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descricao{
+  padding-inline: 20%;
+  padding-bottom: 10%;
+  height: 100px;
+}
+
+.footertxt{
+  color: #ddd;
+  text-align: center;
+}
+
+
+button{
+  margin: 10%;
+  margin-bottom: 10px;
+}
+
+li{
+  list-style-type: none;
+}
+
+footer{
+  background-color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1%;
+}
+
+.custom-form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.custom-form input[type="email"],
+.custom-form select {
+    padding: 10px;
+    border: 2px solid #abebeb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.custom-form input[type="email"]:hover,
+.custom-form select:hover {
+    border-color: #1b4d3e;
+}

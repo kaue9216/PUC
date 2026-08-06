@@ -1,0 +1,182 @@
+
+1. O que você espera aprender nesta disciplina?
+Desenvolver aplicações web e programar em PHP
+
+2. Em uma escala de 1 a 5, como você avalia seu conhecimento
+prévio sobre os conteúdos da disciplina?
+ ( )1 ( )2 (x )3 ( )4 ( )5
+
+
+3. Qual conteúdo você acredita que será seu maior desafio neste
+semestre?
+PHP
+
+4. Após a apresentação do Plano de Ensino, qual é o principal
+objetivo da disciplina? (Caso a disciplina seja Experiência Criativa,
+você entendeu o conceito de Mobilizadora, Extensionista e
+Certificadora?)
+Desenvolver uma aplicação web completa
+
+5. Como as aulas serão conduzidas?
+( ) Apenas expositivas
+( ) Apenas práticas
+(x ) Teoria, demonstração, prática e feedback
+( ) Apenas leituras
+
+6. Explique, com suas palavras, como funcionarão as avaliações da
+disciplina.
+20% da nota é composto pelas tarefas propostas durante RA
+30% é o resultado do trabalho em grupo
+50% a prova de autoria
+
+7. O que você entendeu sobre a Prova de Autoria?
+É uma comprovação de que você foi o autor do código
+
+8. Na sua opinião, por que a Prova de Autoria é importante em
+projetos desenvolvidos em equipe?
+Sim e não, por um lado ela obriga todos a participarem do projeto e por outro limita a divisão de tarefas
+
+9. Os critérios de avaliação ficaram claros?
+(x ) Sim
+( ) Parcialmente
+( ) Não
+Justifique sua resposta:
+Eu entendi direitinho os critérios de avaliação
+
+10. Se respondeu parcialmente ou não, o que ainda ficou em dúvida?
+N/A
+
+11. Como você aprende melhor?
+(x ) Aula expositiva
+( ) Exercícios guiados
+( ) Projetos
+( ) Estudo individual
+( ) Outro: ______
+
+12. O que você espera do professor durante este semestre?
+Um guia na hora de entender a matéria
+
+13. O que você acredita que será necessário da sua parte para ter
+um bom desempenho?
+Prestar atenção nas aulas e realizar as atividades
+
+14. Existe alguma informação que você gostaria que o professor
+soubesse para ajudá-lo em sua aprendizagem? (Opcional)
+
+Declaração de Ciência
+Declaro que participei da apresentação da disciplina, tive acesso às
+informações gerais sobre metodologia e critérios de avaliação e sei
+que posso esclarecer dúvidas com o professor durante o semestre.
+15. Lí a declaração de ciência e:
+a) x Estou de acordo
+b) Não estou de acordo
+Justifique a sua resposta.
+Eu estou de acordo
+
+------------------------------------------
+
+Atividade 1.
+
+<!-- Qual a diferença entre <div> s <span>? Quando usar cada um? -->
+<!-- A <div> cria uma "área" dentro do html, um bloco vertical. Já o Span é mais expecífico e funciona apenas na linha e onde foi aplicado -->
+
+<!-- Escreva o HTML mínimo: Título "Portifólio", <h1>com seu nome, parágravo e imagem com alt -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+</head>
+<body>
+  <h1>Kauê</h1>
+  <p>Paragráfo</p>
+  <img src="foto.jpeg" alt="foto do Icaro Caminotto">
+</body>
+</html>
+
+<!-- Identifique 2 erros no trecho: <IMG SRC=foto.png> <H1>Título<h1> -->
+<!-- A nome do arquivo da imagem não está entre aspas e a tag h1 não foi fechada corretamente -->
+
+<!-- O que significa código HTTP 404? E 301? -->
+<!-- 404: página não encontrada -->
+<!-- 301: Esse não é um erro, mas um aviso de que a página mudou de endereço -->
+
+<!-- Crie uma <ol> com os 5 passos do ciclo de requisição - resposta -->
+
+<ol>
+  <li>URL divulgada</li>
+  <li>Requisição HTTP</li>
+  <li>Processamento do servidor</li>
+  <li>Resposta 200 ok</li>
+  <li>Renderização</li>
+</ol>
+
+------------------------------------------
+
+Atividade 2.
+
+<!-- 1. Qual é a diferença semântica entre <section> e <div>? Em qual situação o uso de <div> ainda é apropriado no HTML5? -->
+<!-- A div é um bloco de código dentro do html, a section é um seção temáticacom um header ou similar -->
+
+<!-- 2. Explique por que tabelas HTML não devem ser usadas para layout de páginas. Qual tecnologia substituiu esse uso? -->
+<!-- As tabelas HTML são feias e são substituidas pelo CSS -->
+
+<!-- 3. Crie o HTML de um formulário de cadastro universitário contendo: nome, e-mail,
+matrícula (número), curso (select com 3 opções) e um checkbox 'Aceito os termos de uso'. Todos os
+campos devem ter labels corretos e o campo e-mail deve ser obrigatório. -->
+
+  <form action="/cadastro" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" required>
+
+    <label for="matricula">Matrícula:</label>
+    <input type="number" id="email">
+
+    <label for="curso">Curso:</label>
+    <select id="curso">
+      <option>Ciência da computação</option>
+      <option>Engenharia de software</option>
+      <option>Analise de dados</option>
+    </select>
+
+    <input type="checkbox" id="opcao" name="termos" value="html">
+    <label for="opcao1">Aceito os termos de uso</label>
+
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Adicione ao currículo do projeto uma seção <section id='educacao'> contendo uma tabela
+com pelo menos 2 cursos realizados (colunas: Instituição, Curso, Ano de Conclusão). Use thead e
+tbody.
+ -->
+<section id="educacao">
+      <h2>Educação</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Curso</th>
+            <th>Nível</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Engenharia de software</td>
+            <td>Superior</td>
+          </tr>
+          <tr>
+            <td>Administração</td>
+            <td>Superior</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- O que acontece se você omitir o atributo for em um <label> e o id no
+<input> correspondente? Quais usuários são mais prejudicados? -->
+<!-- A usabilidade do atributo não fica clara para o usuário, os mais prejudicados são os PCDs -->
