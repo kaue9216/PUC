@@ -1,0 +1,59 @@
+Exercício 1 — Boletim com for clássico
+Declare um array notas com 6 números representando as notas de um aluno em diferentes disciplinas. Utilize um for clássico para percorrer o array e, para cada nota, exiba no console uma mensagem usando template string informando a posição (índice) e o valor da nota. Use if...else para classificar cada nota como "Aprovado" (nota >= 6) ou "Reprovado" (nota < 6).
+
+let notas = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < notas.length; i++) { if (notas[i]>= 6) {
+                           console.log(`Aprovado, nota: ${notas[i]}`);
+                        } else {
+                            console.log(`Reprovado, nota: ${notas[i]}`);
+                        } }
+
+-------------------------------------------
+
+Exercício 2 — Lista de compras com for...of
+Declare uma constante produtos contendo um array de objetos, cada um com nome e preco. Use for...of para percorrer o array e exibir, com interpolação de string, uma frase do tipo "O produto X custa R$Y". Adicione um if...else que classifique cada produto como "Barato" (preço < 50) ou "Caro" (preço >= 50).
+
+let produtos = [['bala',55], ['pirulito',3]]
+for (let i = 0; i < produtos.length; i++) {
+    for (let f = 0; f < 1; f++) {console.log(`O produto ${produtos[i][f]}`)}
+    for (let f = 1; f < 2; f++) {if (produtos[i][f] >= 50) {
+        console.log(`Custa ${produtos[i][f]}, caro`)
+    }else{
+        console.log(`Custa ${produtos[i][f]}, barato`)
+    }}
+}
+
+------------------------------------------
+
+Exercício 3 — Temperaturas da semana com forEach
+Crie um array temperaturas com 7 valores representando as temperaturas de cada dia da semana. Use forEach para percorrer o array e exibir, usando template string, o dia (índice + 1) e a temperatura correspondente. Utilize if...else para indicar se o dia está "Quente" (>= 30°C), "Ameno" (entre 15°C e 29°C) ou "Frio" (< 15°C).
+
+let temperaturas = [1, 2, 3, 4, 5, 6, 31]
+temperaturas.forEach((n, i) => {if (n >= 30){
+    console.log(`dia ${i}, temperatura ${n}`)
+}});
+
+------------------------------------------
+
+Exercício 4 — Verificação de números pares e ímpares
+Declare um array numeros com 10 valores inteiros usando let. Utilize um for clássico para percorrer o array e, para cada número, use if...else para verificar se é par ou ímpar, exibindo o resultado com interpolação de string no formato "O número X é [par/ímpar]".
+
+let numeros = [1, 2, 3, 4, 5, 6, 7]
+for (let i = 0; i < numeros.length; i++) { if (numeros[i] % 2 === 0) {console.log(`o numero ${numeros[i]}, é par`);}
+                                          else {console.log(`o numero ${numeros[i]}, é impar`);}
+     }
+
+------------------------------------------
+
+Exercício 5 — Cadastro de usuários com for...of
+Crie uma constante usuarios contendo um array de objetos com as propriedades nome e idade. Percorra o array com for...of e, para cada usuário, exiba uma mensagem interpolada informando nome e idade. Utilize if...else para verificar se o usuário é "Maior de idade" (idade >= 18) ou "Menor de idade" (idade < 18).
+
+const usuarios = [['joao', 20],['ana', 10]]
+for (let i = 0; i < usuarios.length; i++) {
+    for (let f = 0; f < 1; f++) {console.log(`nome ${usuarios[i][f]}`)}
+    for (let f = 1; f < 2; f++) {if (usuarios[i][f] >= 18) {
+        console.log(`idade ${usuarios[i][f]}, maior de idade`)
+    }else{
+        console.log(`idade ${usuarios[i][f]}, menor de idade`)
+    }}
+}
