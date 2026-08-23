@@ -57,3 +57,100 @@ for (let i = 0; i < usuarios.length; i++) {
         console.log(`idade ${usuarios[i][f]}, menor de idade`)
     }}
 }
+
+-----------------------------------------
+
+Exercício 6 — Somatório de vendas com forEach
+Declare um array vendas com valores numéricos representando vendas diárias de uma loja. Utilize let para criar uma variável total iniciada em 0. Use forEach para somar todos os valores a total e, para cada venda, exiba com template string se aquela venda foi "Acima da média" ou "Abaixo da média" (defina uma média fixa, por exemplo 500). Ao final, exiba o total somado.
+
+let vendas = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let total = 0
+let media = 6
+
+vendas.forEach((n, i) => {
+    total = total + n;
+    if (n >= media){
+        console.log(`venda ${i+1} foi acima da média`);
+    }else{
+        console.log(`venda ${i+1} foi abaixo da média`);
+    }
+});
+console.log(total);
+
+------------------------------------------
+
+Exercício 7 — Validação de senha de usuários
+Crie um array senhas com 5 strings representando senhas cadastradas. Utilize um for clássico para percorrer o array e, para cada senha, use if...else para verificar se ela possui pelo menos 8 caracteres, exibindo com interpolação "A senha X é válida" ou "A senha X é inválida".
+
+let senhas = ['abc', 'abcdefgh', 'abcdefghi']
+for (let i = 0; i < senhas.length; i++) {
+    if (senhas[i].length === 8) {
+        console.log(`a senha ${senhas[i]} é válida`);
+    } else {
+        console.log(`a senha ${senhas[i]} é inválida}`);
+    }
+}
+
+--------------------------------------------
+
+Exercício 8 — Estoque de produtos com for...of
+Declare uma constante estoque com um array de objetos contendo item e quantidade. Percorra com for...of e exiba, usando template string, a quantidade disponível de cada item. Utilize if...else para sinalizar "Repor estoque" quando a quantidade for menor que 10, ou "Estoque OK" caso contrário.
+
+let estoque = [['bala', 1], ['chocolate', 2], ['doce de leite', 3]]
+for (const n of estoque)
+    if(n[1] <= 2){
+        console.log(`é preciso repor o produto ${n[0]}`);
+    }else{
+        console.log(`não é preciso repor o produto ${n[0]}`);
+    };
+
+----------------------------------------------
+
+Exercício 9 — Classificação de idades em uma turma com forEach
+Crie um array idades contendo as idades de alunos de uma turma. Utilize forEach para percorrer o array e, para cada idade, exiba com interpolação de string a classificação: "Criança" (até 12 anos), "Adolescente" (13 a 17 anos) ou "Adulto" (18 anos ou mais), usando if...else if...else.
+
+let idades = [12, 13, 14, 15, 16, 17, 18, 19]
+idades.forEach((n, i) => {
+    if (n <= 12){
+        console.log(`${n} criança`);
+    }else if(n < 18){
+         console.log(`${n} adolescente`);
+    }else{
+         console.log(`${n} adulto`);
+    }
+});
+
+----------------------------------------------
+
+Exercício 10 — Comparativo dos três métodos de repetição
+Declare um array frutas com pelo menos 5 elementos (strings). Implemente três blocos separados de código que percorram o mesmo array: um usando for clássico, outro usando for...of e outro usando forEach. Em todos os casos, exiba o índice e o nome da fruta com template string, e use if...else para indicar se o nome da fruta tem mais de 5 letras ("Nome longo") ou não ("Nome curto"). Ao final, escreva um comentário no código explicando qual das três formas você achou mais adequada e por quê.
+
+let frutas = ['pera', 'uva', 'mamao', 'fruta do conde', 'jaca']
+for (let i = 0; i < frutas.length; i++) {
+    console.log(`${i} - ${frutas[i]}`);
+    if (frutas[i].length >= 5){
+        console.log(`${frutas[i]} - nome longo`)
+    }else{
+        console.log(`${frutas[i]} - nome curto`)
+    }
+}
+let cont = 0
+for (const n of frutas) {
+    console.log(`${cont} - ${n}`);
+    cont = cont + 1
+    if (n.length >= 5){
+        console.log(`${n} - nome longo`)
+    }else{
+        console.log(`${n} - nome curto`)
+    }
+};
+frutas.forEach((n, i) => {
+    console.log(`${i} - ${n}`);
+        if (n.length >= 5){
+        console.log(`${n} - nome longo`)
+    }else{
+        console.log(`${n} - nome curto`)
+    }
+});
+
+// Eu considero o forEach a maneira mais aedquada de resolver esse exercício pois o código fica mais limpo e elegante
